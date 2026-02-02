@@ -1,0 +1,22 @@
+INSERT INTO public."products" (
+	"product_id",
+	"product_name",
+	"supplier_id",
+	"category_id",
+	"quantity_per_unit",
+	"unit_price",
+	"units_in_stock",
+	"units_on_order",
+	"reorder_level",
+	"discontinued")
+VALUES (
+	'{{insert_form.formData.product_id}}',
+	'{{insert_form.formData.product_name}}',
+	'{{insert_form.formData.supplier_id}}',
+	'{{insert_form.formData.category_id}}',
+	'{{insert_form.formData.quantity_per_unit}}',
+	'{{insert_form.formData.unit_price}}',
+	'{{insert_form.formData.units_in_stock}}',
+	'{{insert_form.formData.units_on_order}}',
+	'{{insert_form.formData.reorder_level}}',
+	'{{insert_form.formData.discontinued}}');

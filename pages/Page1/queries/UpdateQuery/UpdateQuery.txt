@@ -1,0 +1,11 @@
+UPDATE public."products" SET
+		"product_name" = '{{update_form.fieldState.product_name.isVisible ? update_form.formData.product_name : update_form.sourceData.product_name}}',
+		"supplier_id" = '{{update_form.fieldState.supplier_id.isVisible ? update_form.formData.supplier_id : update_form.sourceData.supplier_id}}',
+    "category_id" = '{{update_form.fieldState.category_id.isVisible ? update_form.formData.category_id : update_form.sourceData.category_id}}',
+		"quantity_per_unit" = '{{update_form.fieldState.quantity_per_unit.isVisible ? update_form.formData.quantity_per_unit : update_form.sourceData.quantity_per_unit}}',
+		"unit_price" = '{{update_form.fieldState.unit_price.isVisible ? update_form.formData.unit_price : update_form.sourceData.unit_price}}',
+		"units_in_stock" = '{{update_form.fieldState.units_in_stock.isVisible ? update_form.formData.units_in_stock : update_form.sourceData.units_in_stock}}',
+		"units_on_order" = '{{update_form.fieldState.units_on_order.isVisible ? update_form.formData.units_on_order : update_form.sourceData.units_on_order}}',
+		"reorder_level" = '{{update_form.fieldState.reorder_level.isVisible ? update_form.formData.reorder_level : update_form.sourceData.reorder_level}}',
+		"discontinued" = '{{update_form.fieldState.discontinued.isVisible ? update_form.formData.discontinued : update_form.sourceData.discontinued}}'
+WHERE "product_id" = {{data_table.selectedRow.product_id}};
