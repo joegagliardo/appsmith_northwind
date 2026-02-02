@@ -1,11 +1,12 @@
 {
-  "gitSyncId": "6980adea6f933267d3d00f42_a640442b-7e80-4eec-9c4b-19e4e25db951",
+  "gitSyncId": "6980adea6f933267d3d00f42_9af3e8d3-fdc4-4fa0-9b35-6136ba1141cc",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 900,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Customers",
+    "slug": "customers"
   }
 }

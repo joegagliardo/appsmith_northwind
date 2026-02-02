@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6980adea6f933267d3d00f42_0145ecef-deec-4dd6-ab3a-a6084f04fda6",
-  "id": "Page1_DeleteQuery",
+  "gitSyncId": "6980adea6f933267d3d00f42_c98e23f0-80bf-40a3-b068-2087cf0f2a49",
+  "id": "Customers_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.\"products\"\n  WHERE \"product_id\" = {{data_table.triggeredRow.product_id}};",
+      "body": "DELETE FROM public.\"customers\"\n  WHERE \"customer_id\" = {{data_table.triggeredRow.customer_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "name": "DeleteQuery",
-    "pageId": "Page1",
+    "pageId": "Customers",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

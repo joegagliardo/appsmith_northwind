@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6980adea6f933267d3d00f42_0164c56d-3149-4338-b14a-f97b2d44e2f4",
-  "id": "Public.customers_InsertQuery",
+  "id": "Customers_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "InsertQuery",
-    "pageId": "Public.customers",
+    "pageId": "Customers",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

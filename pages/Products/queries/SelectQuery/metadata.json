@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6980adea6f933267d3d00f42_cf68510e-2c8c-4b36-bbf0-827d9dce1e84",
-  "id": "Page1_SelectQuery",
+  "id": "Products_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "SelectQuery",
-    "pageId": "Page1",
+    "pageId": "Products",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }
