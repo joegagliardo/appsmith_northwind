@@ -1,0 +1,28 @@
+INSERT INTO public."customers" (
+	"customer_id",
+	"customer_id",
+	"company_name",
+	"contact_name",
+	"contact_title",
+	"address",
+	"city",
+	"region",
+	"postal_code",
+	"country",
+	"phone",
+	"fax"
+)
+VALUES (
+	'{{insert_form.formData.customer_id}}',
+	'{{insert_form.formData.customer_id}}',
+	'{{insert_form.formData.company_name}}',
+	'{{insert_form.formData.contact_name}}',
+	'{{insert_form.formData.contact_title}}',
+	'{{insert_form.formData.address}}',
+	'{{insert_form.formData.city}}',
+	'{{insert_form.formData.region}}',
+	'{{insert_form.formData.postal_code}}',
+	'{{insert_form.formData.country}}',
+	'{{insert_form.formData.phone}}',
+	'{{insert_form.formData.fax}}'
+);

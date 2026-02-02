@@ -1,0 +1,13 @@
+UPDATE public."customers" SET
+		"customer_id" = '{{update_form.fieldState.customer_id.isVisible ? update_form.formData.customer_id : update_form.sourceData.customer_id}}',
+		"company_name" = '{{update_form.fieldState.company_name.isVisible ? update_form.formData.company_name : update_form.sourceData.company_name}}',
+    "contact_name" = '{{update_form.fieldState.contact_name.isVisible ? update_form.formData.contact_name : update_form.sourceData.contact_name}}',
+		"contact_title" = '{{update_form.fieldState.contact_title.isVisible ? update_form.formData.contact_title : update_form.sourceData.contact_title}}',
+		"address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+		"city" = '{{update_form.fieldState.city.isVisible ? update_form.formData.city : update_form.sourceData.city}}',
+		"region" = '{{update_form.fieldState.region.isVisible ? update_form.formData.region : update_form.sourceData.region}}',
+		"postal_code" = '{{update_form.fieldState.postal_code.isVisible ? update_form.formData.postal_code : update_form.sourceData.postal_code}}',
+		"country" = '{{update_form.fieldState.country.isVisible ? update_form.formData.country : update_form.sourceData.country}}',
+		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		"fax" = '{{update_form.fieldState.fax.isVisible ? update_form.formData.fax : update_form.sourceData.fax}}'
+	WHERE "customer_id" = {{data_table.selectedRow.customer_id}};
