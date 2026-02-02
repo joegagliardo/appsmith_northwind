@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -209,6 +209,15 @@
     },
     {
       "key": "schema.__root_schema__.children.fax.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customer_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customer_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customer_id.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -258,9 +267,9 @@
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "boxShadow": "none",
-      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
         "address": {
@@ -395,6 +404,28 @@
           "position": 8,
           "sourceData": "Germany"
         },
+        "customer_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "customer_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.customer_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customer_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Customer Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customer_id",
+          "position": 10,
+          "sourceData": "ALFKI"
+        },
         "fax": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "fax",
@@ -480,7 +511,8 @@
           "label": "Region",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "region",
-          "position": 5
+          "position": 5,
+          "sourceData": null
         }
       },
       "dataType": "object",
@@ -496,16 +528,23 @@
       "originalIdentifier": "__root_schema__",
       "position": -1,
       "sourceData": {
-        "col1": 5,
-        "col2": "skill B",
-        "col3": 9,
-        "col4": true
+        "address": "Obere Str. 57",
+        "city": "Berlin",
+        "company_name": "Alfreds Futterkiste",
+        "contact_name": "Maria Anders",
+        "contact_title": "Sales Representative",
+        "country": "Germany",
+        "customer_id": "ALFKI",
+        "fax": "030-0076545",
+        "phone": "030-0074321",
+        "postal_code": "12209",
+        "region": null
       }
     }
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"customer_id\")}}",
+  "sourceData": "{{data_table.selectedRow}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

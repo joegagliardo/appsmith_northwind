@@ -8,7 +8,7 @@
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 1370,
+      "bottomRow": 860,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -59,7 +59,7 @@
   "parentColumnSpace": 19.75,
   "parentId": "0",
   "parentRowSpace": 10,
-  "rightColumn": 64,
+  "rightColumn": 39,
   "shouldScrollContents": true,
   "topRow": 0,
   "type": "CONTAINER_WIDGET",

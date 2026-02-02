@@ -1,0 +1,5 @@
+UPDATE public."categories" SET
+		"category_name" = '{{update_form.fieldState.category_name.isVisible ? update_form.formData.category_name : update_form.sourceData.category_name}}',
+		"description" = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}',
+    "picture" = '{{update_form.fieldState.picture.isVisible ? update_form.formData.picture : update_form.sourceData.picture}}'
+WHERE "category_id" = {{data_table.selectedRow.category_id}};
